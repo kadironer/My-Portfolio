@@ -58,7 +58,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 const typed = new Typed('.multiple-text', {
     strings: [
         'iOS Developer',
-        'UI Designer',
+        'UI/UX Designer',
         'Graphic Designer',
     ],
     typeSpeed: 100,
