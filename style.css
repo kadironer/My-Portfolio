@@ -201,7 +201,8 @@ span {
  }
 
  .services-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -209,7 +210,10 @@ span {
  }
 
  .services-container .services-box {
-    flex: 1 1 30rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -480,7 +484,9 @@ span {
 
     .services h2{
         margin-bottom: 3rem;
-
+    }
+    .services-container{
+        grid-template-columns: 1fr 1fr;
     }
 
     .portfolio h2 {
@@ -496,6 +502,14 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+
+    .services-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
 }
 
 
