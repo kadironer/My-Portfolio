@@ -78,8 +78,9 @@ section {
 
 .home {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    
 }
 
 .home-img img {
