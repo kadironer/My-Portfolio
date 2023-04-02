@@ -20,7 +20,7 @@ Bu portfolio websitesinde aşağıdaki özellikler bulunmaktadır:
 
 ## Ekran Görüntüleri
 
-<img src="images/thumb.png" alt="" width="320">
+<img src="images/thumb.png" alt="" width=960">
 
 
 ## Katkıda Bulunma
