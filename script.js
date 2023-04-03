@@ -8,6 +8,32 @@ menuIcon.onclick = () => {
 
 };
 
+const tabs = document.querySelectorAll(".tab");
+const portfolioBoxes = document.querySelectorAll(".portfolio-box");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // remove active class from all tabs
+    tabs.forEach((tab) => tab.classList.remove("active"));
+
+    // add active class to clicked tab
+    tab.classList.add("active");
+
+    const selectedTab = tab.getAttribute("data-tab");
+
+    portfolioBoxes.forEach((box) => {
+      if (selectedTab === "all") {
+        box.style.display = "block";
+      } else if (box.getAttribute("data-type") === selectedTab) {
+        box.style.display = "block";
+      } else {
+        box.style.display = "none";
+      }
+    });
+  });
+});
+
+
 
 /* Scroll Section Active */
 let sections = document.querySelectorAll('section');
@@ -40,16 +66,16 @@ window.onscroll = () => {
 /* Scroll Reveal */
 
 ScrollReveal({ 
-    //reset: true,
+    reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal(', .services-container, .portfolio-box, .contact form,', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img, .portfolio-container', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .home-img, .about-content, .tab-container', { origin: 'right' });
 
 
 

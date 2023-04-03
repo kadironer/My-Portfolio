@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -149,9 +149,14 @@
 
     <!--Projects-->
     <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
+      <h2 class="heading">My <span>Projects</span></h2>
+      <div class="tab-container">
+        <button class="tab active" data-tab="all">All Projects</button>
+        <button class="tab" data-tab="mobile">Mobile Apps</button>
+        <button class="tab" data-tab="ui">UI Designs</button>
+      </div>
       <div class="portfolio-container">
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-type="ui">
           <img src="project-images/carlingen-wallet.png" alt="" />
           <div class="portfolio-layer">
             <h4>Carlingen Wallet App</h4>
@@ -159,25 +164,58 @@
             <a
               href="https://www.behance.net/gallery/166759149/Carlingen-Wallet-App"
               target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
           </div>
         </div>
 
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-type="ui">
           <img src="project-images/firat-mobil.png" alt="" />
           <div class="portfolio-layer">
             <h4>Firat Mobile App</h4>
-            <p>I have designed the UI for Firat Mobile.</p>
+            <p>
+              I designed the UI designs for the current mobile application of
+              Firat University.
+            </p>
             <a
               href="https://www.behance.net/gallery/156852121/Frat-Mobil"
               target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
           </div>
         </div>
 
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-type="mobile">
+          <img src="project-images/fruit-shopping-app.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Fruit Shopping App</h4>
+            <p>I have coded the UI for a fruit shopping app using Flutter.</p>
+            <a
+              href="https://github.com/kadironer/fruit_shopping_app"
+              target="_blank"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box" data-type="mobile">
+          <img src="project-images/instagram-clone-app.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Instagram UI Clone</h4>
+            <p>I have created an Instagram UI clone using Flutter.</p>
+            <a
+              href="https://github.com/kadironer/instagram_ui_clone"
+              target="_blank"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box" data-type="ui">
           <img src="project-images/boymetre.png" alt="" />
           <div class="portfolio-layer">
             <h4>Boymetre Mobile App</h4>
@@ -185,12 +223,13 @@
             <a
               href="https://www.behance.net/gallery/153461519/Boymetre-Mobile"
               target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
           </div>
         </div>
 
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-type="ui">
           <img src="project-images/futag.png" alt="" />
           <div class="portfolio-layer">
             <h4>FUTAG Mobile App</h4>
@@ -201,8 +240,9 @@
             <a
               href="https://www.behance.net/gallery/152747999/Futag-Mobile"
               target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
           </div>
         </div>
       </div>
