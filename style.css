@@ -540,6 +540,9 @@ span {
     text-align: center;
     margin-top: 2rem;
   }
+  .logo img{
+    width: 16vw;
+  }
 }
 
 .tab-container {

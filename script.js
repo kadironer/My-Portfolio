@@ -34,7 +34,6 @@ tabs.forEach((tab) => {
 });
 
 
-
 /* Scroll Section Active */
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
@@ -66,7 +65,7 @@ window.onscroll = () => {
 /* Scroll Reveal */
 
 ScrollReveal({ 
-    /*reset: true,*/
+    /*reset: true, */
     distance: '80px',
     duration: 2000,
     delay: 200
