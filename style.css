@@ -529,6 +529,11 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+    .tab-container{
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 365px) {
