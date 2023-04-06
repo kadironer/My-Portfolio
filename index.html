@@ -253,19 +253,16 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form onsubmit="sendEmail(); reset(); return false; ">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="E-Mail" />
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="E-Mail Subject" />
+          <input type="text" id="name" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="E-Mail" />
+          <input type="number" id="phone" placeholder="Mobile Number" />
         </div>
 
         <textarea
           name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
@@ -289,7 +286,8 @@
 
     <!--Typed JS-->
     <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-
+    <!--Smtp-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -332,8 +332,10 @@ span {
 
 .contact form .input-box {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact form .input-box input,
@@ -348,7 +350,7 @@ span {
 }
 
 .contact form .input-box input {
-  width: 49%;
+  width: 100%;
 }
 
 .contact form textarea {
@@ -397,6 +399,9 @@ span {
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
+  }
+  .logo img{
+    width: 5vw;
   }
 }
 
@@ -493,6 +498,9 @@ span {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .logo img{
+    width: 8vw;
+  }
 }
 
 @media (max-width: 617px) {
@@ -519,6 +527,9 @@ span {
     flex-direction: column;
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .logo img{
+    width: 12vw;
   }
 }
 
